@@ -26,5 +26,5 @@ services:
       - "8080:8080"
     volumes:
       - .:/go/src/github.com/wt-l00/goapisample
-    command: sh ./start_app.sh
+    command: sh ./start-app.sh
 

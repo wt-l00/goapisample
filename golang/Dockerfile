@@ -1,6 +1,8 @@
 FROM golang:latest
 
-WORKDIR /go/src/github.com/wt-l00/goapisample
+RUN apt-get update -qq && \
+    apt-get install -y default-mysql-client
 
-COPY main.go .
+WORKDIR /go/src/github.com/wt-l00/goapisample
+COPY . .
 RUN go build
