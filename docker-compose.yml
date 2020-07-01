@@ -12,7 +12,7 @@ services:
       - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: app_root_pass
-      #MYSQL_DATABASE: gogo
+      MYSQL_DATABASE: gogo
       MYSQL_USER: app_user
       MYSQL_PASSWORD: app_pass
       TZ: 'Asia/Tokyo'
